@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Example</title>
+    <link rel="stylesheet" href="styles-1.css"/>
+</head>
+<body>
+   <header>
+        <h1>Media Queries Example</h1>
+   </header> 
+   <main>
+        <section class="content">
+            <p>This is the main content section.</p>
+            <img src="smiley_face.png" alt="Image" />
+        </section>
+   </main>
+   <footer>
+        <p>Copyright &copy; 2023</p>
+   </footer>
+</body>
+</html>
+
+<!-- 
+เมื่อขนาดหน้าจอไม่เกิน 768 พิกเซล" หรือก็คือ "เมื่อเข้าไปในโหมดหน้าจอขนาดเล็ก (mobile view)" ให้นำกฎสไตล์ที่อยู่ข้างในนี้มาใช้
+
+กฎสไตล์ main จะถูกนำมาใช้เมื่อขนาดหน้าจอไม่เกิน 768px. กฎนี้ทำให้ main มีความกว้างเต็มหน้าจอ
+กฎสไตล์ section.content จะถูกนำมาใช้เมื่อขนาดหน้าจอไม่เกิน 768px. กฎนี้ทำให้ข้อความใน section.content จะถูกจัดตรงกลาง
+กฎสไตล์ img จะถูกนำมาใช้เมื่อขนาดหน้าจอไม่เกิน 768px. กฎนี้ทำให้รูปภาพใน img จะมีความกว้างไม่เกิน 100% ของ viewport width (100vw)
+
+ลักษณะของ section.content ทำหน้าที่กำหนดสไตล์ให้กับ <section> ที่มี class เป็น "content" นั้น ๆ ในลักษณะที่ถูกกำหนดใน styles-1.css
+
+main p {
+    color: red;
+}
+เป็น property ที่กำหนดสีของตัวอักษรในส่วนที่ถูกเลือก (ในที่นี้คือ element <p> ที่อยู่ภายใต้ <main>) เป็นสีแดง
+-->

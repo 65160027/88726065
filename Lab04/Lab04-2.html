@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <link rel="stylesheet" href="styles-2.css"/>
+</head>
+<body>
+    <header>
+        <h1>Flexbox Example</h1>
+    </header>
+    <main>
+        <section class="flex-row">
+            <div class="flex-item">
+                <h2>Flex Item 1</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Flex Item 2</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Flex Item 3</h2>
+            </div>
+        </section>
+        <section class="flex-colum">
+            <div class="flex-item">
+                <h2>Flex Item 1</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Flex Item 2</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Flex Item 3</h2>
+            </div>
+        </section>
+        <section class="flex-justify-center">
+            <div class="flex-item">
+                <h2>Flex Item 1</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Flex Item 2</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Flex Item 3</h2>
+            </div>
+        </section>
+        <section class="flex-align-center">
+            <div class="flex-item">
+                <h2>Flex Item 1</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Flex Item 2</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Flex Item 3</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+</html>
+
+<!--
+    ใช้กำหนดแบบอักษร
+
+    1.ชื่อสี -> background-color: red;
+    2.รหัสสี Hex (Hexadecimal)  -> background-color: #00ff00;
+    3.RGB และ RGBA (Red, Green, Blue) -> background-color: rgb(255, 0, 0);
+    background-color: rgba(0, 255, 0, 0.5); /* 50% ทึบ */
+    4.HSL และ HSLA (Hue, Saturation, Lightness) -> background-color: hsl(0, 100%, 50%);
+    background-color: hsla(120, 100%, 50%, 0.3); /* 30% ทึบ */
+    5.Keyword -> background-color: transparent;
+
+    ควรเขียนไว้ก่อน เพราะ ทำให้เรามีความยืดหยุ่นมากขึ้นในการปรับแต่งหน้าเว็บมากขึน
+    
+    ทำให้ elements ภายใน container จัดเรียงในแนวนอน (horizontal) ในลักษณะของ "flex container" ที่มีทิศทางการเรียงลำดับเป็นแนวนอน (จากซ้ายไปขวา)
+
+    ทำให้เนื้อหาทั้งหมดใน flex container อยู่ตรงกลางของ container ทั้งแนวนอนและแนวตั้ง
+-->

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid Layout Example</title>
+    <link rel="stylesheet" href="styles-3.css"/>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <nav class="nav">Navigation</nav>
+        <main class="main">Main Content</main>
+        <aside class="sidebar">Sidebar</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
+
+<!--
+    grid-template-columns: ใช้กำหนดขนาดของ columns ใน grid โดยระบุความกว้างของแต่ละ column
+    grid-template-rows: ใช้กำหนดขนาดของ rows ใน grid โดยระบุความสูงของแต่ละ row ด้วยค่าที่กำหนด
+
+    ใช้ในการกำหนดระยะห่าง (gap) ระหว่าง columns และ rows ใน grid container
+
+    เมื่อหน้าจอมีความกว้างไม่เกิน 600px จะกลายเป็นแถวยาว คอลัมเดียว
+
+    display: grid; - กำหนดให้ element เป็น grid container.
+
+grid-template-columns: 1fr 3fr; - กำหนด template columns โดยมี 2 columns โดยใช้ fr unit (fractional unit) ซึ่งแบ่งพื้นที่ใน container เป็นส่วนที่มีขนาดเป็นส่วนเท่า ๆ กัน.
+
+grid-template-rows: auto; - กำหนด template rows โดยให้มี 1 row ที่มีขนาดเท่ากับขนาดของเนื้อหาใน row.
+
+grid-template-areas: "header header" "nav main" "sidebar main" "footer footer"; - กำหนด template areas โดยให้แต่ละ element มีพื้นที่ที่กำหนดไว้ใน template.
+
+gap: 10px; - กำหนดระยะห่างระหว่าง grid items เป็น 10px.
+
+height: 100vh; - กำหนดความสูงของ container เท่ากับ 100% ของ viewport height.
+
+ส่วนที่เกี่ยวกับ media query:
+
+@media screen and (max-width: 600px) - เงื่อนไขใน media query เมื่อขนาดหน้าจอมีความกว้างไม่เกิน 600px.
+
+.grid-container ใน media query กำหนดให้มีเพียง 1 column และแต่ละ element จะเป็น 1 row.
+
+นอกจากนี้, property ที่กำหนดในแต่ละ element ยังรวมถึงการกำหนด grid area, background color, color, padding, และ text-align ตามที่กำหนดไว้ใน .header, .nav, .main, .sidebar, และ .footer.
+
+
+
+
+
+
+-->

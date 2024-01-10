@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ใบสมัครงาน</title>
+    <style>
+        /* เลือกตารางทั้งหมด */
+        table {
+          /* กำหนดให้ตารางแสดงตรงกลางของหน้าเว็บ */
+          margin: auto;
+          /* กำหนดขอบเขตและลักษณะของเส้นขอบ */
+          border-collapse: collapse;
+          width: 20%; /* กำหนดความกว้างของตาราง */
+        }
+    
+        /* เลือกเซลล์ของตารางทั้งหมด */
+        td, th {
+
+          text-align: left; /* กำหนดการจัดวางข้อความภายในเซลล์ */
+          padding: 5px; /* กำหนดระยะห่างภายในเซลล์ */
+        }
+
+      </style>
+
+</head>
+<body>
+  <form action="Job" method="post">
+    <table>
+        <tr>
+            <td><h2>ใบสมัครงาน</h2></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;"><label for="name">ชื่อ*</label><br><input type="text" id="name" name="name" required></td>
+            <td style="font-weight: bold;"><label for="lname">นามสกุล*</label><br><input type="text" id="lname" name="lname" required></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-weight: bold;"><label for="email">อีเมล*</label><br><input type="email" id="email" name="email" required size="47"></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-weight: bold;"><label for="web">เว็บไซต์ผลงาน</label><br><input type="url" id="web" name="web" pattern="https?://.*" required size="47"></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-weight: bold;"><label for="job">ตำแหน่งที่ต้องการสมัคร*</label><br><input type="text" id="job" name="job" required size="47"></td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;"><label for="salary">เงินเดือนที่ต้องการ</label><br><input type="text" id="salary" name="salary" required></td>
+            <td style="font-weight: bold;"><label for="date">จะเริ่มงานได้เมื่อไหร่</label><br><input type="text" id="date" name="date" required></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;"><label for="tel">โทรศัพท์มือถือ*</label><br><input type="text" id="tel" name="tel" required pattern="\d{10}"></td>
+            <td style="font-weight: bold;"><label for="telHome">โทรศัพท์บ้าน</label><br><input type="text" id="telHome" name="telHome" requiredpattern="\d{10}"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for=""><strong>คุณสะดวกที่จะย้ายที่อยู่หรือไม่*</strong></label>
+                <br><input type="radio" id="conv" name="q1" value="convenient" required/>
+                <label for="conv">สะดวก</label>
+                <input type="radio" id="inconv" name="q1" value="iniconvenient" required/>
+                <label for="inconv">ไม่สะดวก</label>
+                <input type="radio" id="unsure" name="q1" value="unsure" required/>
+                <label for="conv">ไม่แน่ใจ</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-weight: bold;"><label for="typeJob">ลักษณะงานที่ทำในที่ทำงานล่าสุด</label><br><input type="text" id="typeJob" name="typeJob" required size="47"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-weight: bold;"><label for="question">คำถาม</label><br>
+              <textarea id="question" name="question" required rows="6" cols="49"></textarea>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button type="submit">ส่งใบสมัคร</button>
+          </td>
+        </tr>
+    </table>
+  </form>
+</body>
+</html>

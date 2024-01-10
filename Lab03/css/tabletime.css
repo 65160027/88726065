@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center
+}
+
+th {
+    background-color: #c4c4c4;
+}
+th:first-child {
+    text-align: left;
+}
+
+td:not(:empty) {
+    background-color: #63b6f1; /* สีฟ้า */
+    color: #fff; /* สีของตัวอักษร */
+}
+td:first-child {
+    font-weight: bold;
+    background-color: rgb(206, 206, 206);
+    text-align: left;
+    color: #000000; /* สีของตัวอักษร */
+}
